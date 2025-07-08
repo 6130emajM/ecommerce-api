@@ -1,0 +1,53 @@
+### Add Customer
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "address": "123 Main Street"
+}
+
+### Get All Customers
+GET http://localhost:5000/customers
+
+### Update Customer
+PUT http://localhost:5000/customers/1
+Content-Type: application/json
+
+{
+  "address": "456 New Address"
+}
+
+### Delete Customer
+DELETE http://localhost:5000/customers/1
+
+### Add Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+  "product_name": "Laptop",
+  "price": 999.99
+}
+
+### Get All Products
+GET http://localhost:5000/products
+
+### Create Order
+POST http://localhost:5000/orders
+Content-Type: application/json
+
+{
+  "order_date": "2025-06-30T15:30:00",
+  "customer_id": 1
+}
+
+### Add Product to Order
+PUT http://localhost:5000/orders/1/add_product/1
+
+### Remove Product from Order
+DELETE http://localhost:5000/orders/1/remove_product/1
+
+### Get Orders by User
+GET http://localhost:5000/orders/user/1
