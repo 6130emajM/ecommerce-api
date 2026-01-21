@@ -39,4 +39,3 @@ MariaDB database: `ecommerce_api`
 - PUT /orders/<order_id>/add_product/<product_id> - Add product to order
 - DELETE /orders/<order_id>/remove_product/<product_id> - Remove product
 - GET /orders/user/<user_id> - User's orders
-- GET /orders/<order_id>/products - Order's products
